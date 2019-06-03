@@ -7,7 +7,7 @@ Currently there is support for 20 sites.
 
 You will need to create a separate .tsv file and name the in the manner which you will use in the commands. 
 
-Once that is completed, rename the button labels and update the commands with the desired site .tsv.
+Once that is completed, rename the button labels and update the commands with the desired site .tsv. Also, update any arguments in the commanf ie; SDR type, hardware output for audio (I'm using hw=1,0 for usb speakers ATM), etc.
 
 I am currently looking into creating a set up file to allow for ease of creation of your own GUI without having to alter any code. I will work on this as time allows. 
 
