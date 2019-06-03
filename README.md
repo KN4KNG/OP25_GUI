@@ -14,3 +14,5 @@ I am currently looking into creating a set up file to allow for ease of creation
 If you have any interest in assisting with this project, please feel free to reach out to me.
 
 73's and happy scanning. 
+
+<img src="https://i.creativecommons.org/p/mark/1.0/88x31.png" alt="PDM">
