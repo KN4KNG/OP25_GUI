@@ -26,6 +26,71 @@ import subprocess
 import os
 import threading
 
+#Commands
+
+def stopall():
+    os.system("pkill -f ./rx.py")
+def CMD_OP25_01():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 853.75e6 -o 25000 -q 1 -T Berea.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+def CMD_OP25_02():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 853.6125e6 -o 25000 -q 1 -T Butner.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+def CMD_OP25_03():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 853.975e6 -o 25000 -q 1 -T Bullock_WICE_FM.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+def CMD_OP25_04():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 853.6375e6 -o 25000 -q 1 -T Oak_Hill.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+def CMD_OP25_05():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 852.975e6 -o 25000 -q 1 -T Oxford_Water_Tower.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+def CMD_OP25_06():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 853.8875e6 -o 25000 -q 1 -T Oxford_Bi-Com.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+def CMD_OP25_07():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 773.53125e6 -o 25000 -q 1 -T Manson.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+def CMD_OP25_08():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 853.675e6 -o 25000 -q 1 -T Roxboro_1.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+def CMD_OP25_09():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 774.63125e6 -o 25000 -q 1 -T Roxboro_2.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+def CMD_OP25_10():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 769.26875e6 -o 25000 -q 1 -T Mt_Tirzah.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+def CMD_OP25_11():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 852.1375e6 -o 25000 -q 1 -T Louisburg.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+def CMD_OP25_12():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 774.83125e6 -o 25000 -q 1 -T Youngsville.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+def CMD_OP25_13():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 858.8375e6 -o 25000 -q 1 -T Duke_University.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+def CMD_OP25_14():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 858.8125e6 -o 25000 -q 1 -T Camden_Ave.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+def CMD_OP25_15():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 859.5125e6 -o 25000 -q 1 -T Cole_Mill_Rd.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+def CMD_OP25_16():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 774.2875e6 -o 25000 -q 1 -T Brian_Center.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+def CMD_OP25_17():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 859.2625e6 -o 25000 -q 1 -T Eno_Mtn.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+def CMD_OP25_18():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 859.7625e6 -o 25000 -q 1 -T Laws.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+def CMD_OP25_19():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 774.39375e6 -o 25000 -q 1 -T Mebane.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+def CMD_OP25_20():
+    os.system("pkill -f ./rx.py") 
+    os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 860.4625e6 -o 25000 -q 1 -T Wake_North_Durant.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'&")
+
 def main():
     mw = tk.Tk()
 
@@ -43,71 +108,6 @@ def main():
     back.pack(fill=tk.BOTH, expand=1) #Expand the frame to fill the root window
 
 
-    #Commands
-    
-    def stopall():
-        os.system("pkill -f ./rx.py")
-    def CMD_OP25_01():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 853.75e6 -o 25000 -q 1 -T Berea.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    def CMD_OP25_02():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 853.6125e6 -o 25000 -q 1 -T Butner.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    def CMD_OP25_03():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 853.975e6 -o 25000 -q 1 -T Bullock_WICE_FM.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    def CMD_OP25_04():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 853.6375e6 -o 25000 -q 1 -T Oak_Hill.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    def CMD_OP25_05():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 852.975e6 -o 25000 -q 1 -T Oxford_Water_Tower.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    def CMD_OP25_06():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 853.8875e6 -o 25000 -q 1 -T Oxford_Bi-Com.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    def CMD_OP25_07():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 773.53125e6 -o 25000 -q 1 -T Manson.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    def CMD_OP25_08():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 853.675e6 -o 25000 -q 1 -T Roxboro_1.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    def CMD_OP25_09():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 774.63125e6 -o 25000 -q 1 -T Roxboro_2.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    def CMD_OP25_10():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 769.26875e6 -o 25000 -q 1 -T Mt_Tirzah.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    def CMD_OP25_11():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 852.1375e6 -o 25000 -q 1 -T Louisburg.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    def CMD_OP25_12():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 774.83125e6 -o 25000 -q 1 -T Youngsville.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    def CMD_OP25_13():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 858.8375e6 -o 25000 -q 1 -T Duke_University.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    def CMD_OP25_14():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 858.8125e6 -o 25000 -q 1 -T Camden_Ave.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    def CMD_OP25_15():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 859.5125e6 -o 25000 -q 1 -T Cole_Mill_Rd.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    def CMD_OP25_16():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 774.2875e6 -o 25000 -q 1 -T Brian_Center.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    def CMD_OP25_17():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 859.2625e6 -o 25000 -q 1 -T Eno_Mtn.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    def CMD_OP25_18():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 859.7625e6 -o 25000 -q 1 -T Laws.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    def CMD_OP25_19():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 774.39375e6 -o 25000 -q 1 -T Mebane.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    def CMD_OP25_20():
-        os.system("pkill -f ./rx.py") 
-        os.system("cd ~/op25/op25/gr-op25_repeater/apps; ./rx.py --args 'rtl' -N 'LNA:47' -S 2400000 -f 860.4625e6 -o 25000 -q 1 -T Wake_North_Durant.tsv -V -2 -U 2> stderr.2 -l 'http:0.0.0.0:8080'")
-    
     #Buttons
 
     Stop_OP25 = tk.Button(master=back, text='Stop OP25 Instances', command=stopall, width=14, height=5)
