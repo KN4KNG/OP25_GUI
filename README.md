@@ -19,4 +19,4 @@ If you have any interest in assisting with this project, please feel free to rea
 
 <img src="https://i.creativecommons.org/p/mark/1.0/88x31.png" alt="PDM">
 
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D10155983450435810%26set%3Da.10150237747365810%26type%3D3&width=500" width="500" height="676" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+<img class="spotlight" alt="No photo description available." src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/61937625_10155983450440810_2742044354561441792_n.jpg?_nc_cat=110&amp;_nc_oc=AQl86bcyj3rKL3OxRGQZHeWy4GEziztIKa9LR-0v6eD0L2Ecc3jHLa9vwIa8KuAKvOc&amp;_nc_ht=scontent-iad3-1.xx&amp;oh=8dc80a6a4edbab575cf213f2703b823f&amp;oe=5D9489D2" style="width: 960px; height: 720px;" aria-busy="true">
