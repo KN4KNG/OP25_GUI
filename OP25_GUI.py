@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
 #  OP25_GUI.py
@@ -31,7 +31,7 @@
 #  For more information, please refer to <http://unlicense.org/>
 
 
-import tkinter as tk
+import Tkinter as tk
 import subprocess
 import os
 import threading
