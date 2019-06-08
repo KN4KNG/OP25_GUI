@@ -1,0 +1,2 @@
+Sysname	Control Channel List	Offset	NAC	Modulation	TGID Tags File	Whitelist	Blacklist	Center Frequency
+Brian Center	774.2875		0x1f2	cqpsk	tgid.tsv			
