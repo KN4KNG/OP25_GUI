@@ -1,0 +1,2 @@
+Sysname	Control Channel List	Offset	NAC	Modulation	TGID Tags File	Whitelist	Blacklist	Center Frequency
+Wake_North_Durant	860.4625		0x000	cqpsk	tgid.tsv			
