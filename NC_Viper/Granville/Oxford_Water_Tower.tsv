@@ -1,0 +1,2 @@
+Sysname	Control Channel List	Offset	NAC	Modulation	TGID Tags File	Whitelist	Blacklist	Center Frequency
+Oxford_Water_Tower	852.975		0x000	cqpsk	tgid.tsv			
