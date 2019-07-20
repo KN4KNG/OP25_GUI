@@ -70,6 +70,8 @@ If you are using a touchscreen that is HDMI or if you need to enable the aux por
 
 ie:* sudo amixer cset numid=3 1*
 
+The Final thing to change is the offset for your RTL-SDR. Open the .py in Geany (right click, open with geany) and Ctrl H to find and replace -q 1 to -q -1, -q 2, etc. Make sure you save the file after the changes. 
+
 I am not conitnuing development on this project at the moment. Please make this project your own and redistribute it. There is just too much going on in my life to keep up with this development. 
 
 73's and happy scanning. 
