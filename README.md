@@ -48,7 +48,7 @@ Next you will need to make these python files executabble. Open a terminal and d
 
 *cd Desktop*
 
-*chmod +x *.py*
+chmod +x *.py
 
 (This will make all of your python files on your desktop executable)
 If you have other python files you do not want to make executables do the following.
@@ -62,7 +62,7 @@ You should now be complete. Click on the appropiate .py to start. Once OP25 is s
 
 If you are using a touchscreen that is HDMI or if you need to enable the aux port as the default enter the following command:
 
-*sudo amixer cset numid=3 <output>*
+*sudo amixer cset numid=3 [output]*
 
 *0=auto*
 *1=aux*
