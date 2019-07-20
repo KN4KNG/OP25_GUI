@@ -1,24 +1,79 @@
 # OP25_GUI
-Graphical User Interface for OP25
+# Graphical User Interface for OP25
 
-This is a personal project that I have made with tkinter to allow for a raspbery pi w/ 7" touchscreen to interface with OP25 in a mobile/portable envirroment. 
+# This is a personal project that I have made with tkinter to allow for a raspbery pi w/ 7" touchscreen to interface with OP25 in a mobile/portable envirroment. There are two versions that I've made two types. The first type that I made only suppoerts twenty favorites, you will need to edit the file to meet you needs. You'll need to alter the offset to meet your device, frequency, audio output, button names ect. If you are in the state of North Carolina, you will benefit from my second project, The cseond has two python files, one for USB audio output and the other default analog/HDMI output, whichever is set to default on your Raspberry Pi. 
 
-This Project will only work if you install the op25 as per the developer. The working directory of the OP25 rx.py is: /home/pi/op25/op25/gr-op25_repeater/apps. If you have any deviation please update the OP25_GUI.py.
+# This Project will only work if you install the op25 as per the developer. The working directory of the OP25 rx.py is: /home/pi/op25/op25/gr-op25_repeater/apps. If you have any deviation please update the OP25_GUI.py to meet your requirements.
 
-Currently there is support for 20 sites. 
+# To set up for the North Carolina counties file:
 
-You will need to create a separate .tsv file and name the in the manner which you will use in the commands. The .tsv files I am using are uploaded and will work for you if you are in the Wake, Granvile, Durham or Orange COunties of North Craolina, USA. The .py GUI file can be saved any where. The .tsv files will need to be saved in the /home/pi/op25/op25/gr-op25_repeater/apps/ direcotry.
+# Boot your pi, open a terminal and type the following commands.
 
-Once that is completed, rename the button labels and update the commands with the desired site .tsv. Also, update any arguments in the command ie; SDR type, hardware output for audio (I'm using hw=1,0 for usb speakers ATM), etc.
+sudo apt update
 
-I am currently looking into creating a set up file to allow for ease of creation of your own GUI without having to alter any code. I will work on this as time allows. 
+sudo apt install gnuradio libvolk1-bin libusb-1.0-0 gr-iqbal
 
-If you have any interest in assisting with this project, please feel free to reach out to me.
+sudo apt install qt5-default libqt5svg5 libportaudio2
 
-73's and happy scanning. 
+sudo cp udev/*.rules /etc/udev/rules.d/
+
+# Now make a directory and download gqrx
+
+cd
+mkdir gqrx
+cd gqrx
+wget https://github.com/csete/gqrx/releases/download/v2.11.5/gqrx-sdr-2.11.5-linux-rpi3.tar.xz
+
+# Download OP25 from the repository using this command. Make sure you change directories out of gqrx.
+
+cd
+git clone https://github.com/boatbod/op25.git
+
+# It will make a folder called op25
+
+cd op25
+
+./install.sh
+
+# It will instruct you to install GNUPLOT following the build and install process
+
+sudo apt-get install gnuplot-x11
+
+# Wait a bit for it to install.  It should take care of everything.
+
+# Once you have OP25 installed, Download the files contained in this github. Copy the NC_Viper folder to:
+
+/home/pi/op25/op25/gr-op25_repeater/apps
+
+# Then Copy North_Carolina_Viper_GUI_Non_USB_Speaker_Default_Audio.py or North_Carolina_Viper_GUI.py to you desktop.
+
+# Next you will need to make these python files executabble. Open a terminal and do the following.
+
+cd Desktop
+
+chmod +x *.py
+
+# (This will make all of your python files on your desktop executable)
+# If you have other python files you do not want to make executables do the following.
+
+cd Desktop
+
+chmod +x North_Carolina_Viper_GUI_Non_USB_Speaker_Default_Audio.py
+chmod +x North_Carolina_Viper_GUI.py
+
+# You should now be complete. Click on the appropiate .py to start. Once OP25 is started by clicking a button yo may open your broweser and navigate to 127.0.0.1:8080 to go to the http dashboard created by BoatBod/Osmocom depending on the version you are using. 
+
+# If you are using a touchscreen that is HDMI or if you need to enable the aux port as the default enter the following command:
+
+sudo amixer cset numid=3 <output>
+
+0=auto
+1=aux
+2=hdmi
+
+# I am not conitnuing development on this project at the moment. Please make this project your own and redistribute it. There is just too much going on in my life to keep up with this development. 
+
+# 73's and happy scanning. 
 
 <img src="https://i.creativecommons.org/p/mark/1.0/88x31.png" alt="PDM">
 
-<img class="spotlight" alt="No photo description available." src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/61937625_10155983450440810_2742044354561441792_n.jpg?_nc_cat=110&amp;_nc_oc=AQl86bcyj3rKL3OxRGQZHeWy4GEziztIKa9LR-0v6eD0L2Ecc3jHLa9vwIa8KuAKvOc&amp;_nc_ht=scontent-iad3-1.xx&amp;oh=8dc80a6a4edbab575cf213f2703b823f&amp;oe=5D9489D2" style="width: 960px; height: 720px;" aria-busy="true">
-
-Video: https://www.facebook.com/towerclimb/videos/pcb.10155983454830810/10155983450425810/?type=3&theater
