@@ -1,0 +1,2 @@
+Sysname	Control Channel List	Offset	NAC	Modulation	TGID Tags File	Whitelist	Blacklist	Center Frequency
+NCSHP_Training_Center	772.60625		0x000	cqpsk	tgid.tsv			

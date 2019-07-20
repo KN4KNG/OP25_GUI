@@ -1,0 +1,2 @@
+Sysname	Control Channel List	Offset	NAC	Modulation	TGID Tags File	Whitelist	Blacklist	Center Frequency
+High_Rock_Lake	774.03125		0x000	cqpsk	tgid.tsv			

@@ -1,0 +1,2 @@
+Sysname	Control Channel List	Offset	NAC	Modulation	TGID Tags File	Whitelist	Blacklist	Center Frequency
+West_Raleigh_SHP_C_and_L	769.20625		0x000	cqpsk	tgid.tsv			

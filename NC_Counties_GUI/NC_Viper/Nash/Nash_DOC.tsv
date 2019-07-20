@@ -1,0 +1,2 @@
+Sysname	Control Channel List	Offset	NAC	Modulation	TGID Tags File	Whitelist	Blacklist	Center Frequency
+Nash_DOC	853.175		0x000	cqpsk	tgid.tsv			

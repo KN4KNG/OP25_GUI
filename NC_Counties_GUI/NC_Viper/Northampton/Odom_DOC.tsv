@@ -1,0 +1,2 @@
+Sysname	Control Channel List	Offset	NAC	Modulation	TGID Tags File	Whitelist	Blacklist	Center Frequency
+Odom_DOC	774.48125		0x000	cqpsk	tgid.tsv			
