@@ -68,6 +68,8 @@ If you are using a touchscreen that is HDMI or if you need to enable the aux por
 *1=aux*
 *2=hdmi*
 
+ie:*sudo amixer cset numid=3 1*
+
 I am not conitnuing development on this project at the moment. Please make this project your own and redistribute it. There is just too much going on in my life to keep up with this development. 
 
 73's and happy scanning. 
