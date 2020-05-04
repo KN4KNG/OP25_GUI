@@ -1,4 +1,5 @@
 #!/bin/bash
+
 cd ~
 sudo cp ~/OP25_GUI/NC_Counties_GUI/NC_Viper/ ~/op25/op25/gr-op25_repeater/apps/
 sudo cp ~/OP25_GUI/NC_Counties_GUI/*.py ~/Desktop/
